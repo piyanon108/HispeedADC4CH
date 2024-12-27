@@ -1,0 +1,406 @@
+
+*** Running vivado
+    with args -log design_1_util_ds_buf_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_util_ds_buf_1_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_util_ds_buf_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/fpgaProject/hdl_2022_r2/hdl/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/fpgaProject/DMA_AXIS_LTC2324_16'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_util_ds_buf_1_0
+Command: synth_design -top design_1_util_ds_buf_1_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 140198
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2469.289 ; gain = 372.770 ; free physical = 6768 ; free virtual = 18397
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3475.184; parent = 2475.230; children = 999.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_1_0' [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/synth/design_1_util_ds_buf_1_0.vhd:64]
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at '/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:72' bound to instance 'U0' of component 'util_ds_buf' [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/synth/design_1_util_ds_buf_1_0.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:251]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_I' to cell 'IBUFDS' [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:376]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:251]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_1_0' (0#1) [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/synth/design_1_util_ds_buf_1_0.vhd:64]
+WARNING: [Synth 8-3848] Net BUFG_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:109]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:114]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:119]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:124]
+WARNING: [Synth 8-3848] Net BUFG_FABRIC_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:128]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:133]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:134]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:139]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:140]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:146]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:147]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:152]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:153]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:159]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:160]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:165]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:166]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:170]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_ODIV2 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:171]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:177]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:178]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:185]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:186]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:189]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_ODIV2 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:190]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:198]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:199]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:205]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_OB in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:206]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:216]
+WARNING: [Synth 8-3848] Net BUFG_PS_O in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:220]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O1 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:232]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O2 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:233]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O3 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:234]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O4 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:235]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O1 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:240]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O2 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:241]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O3 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:242]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O4 in module/entity util_ds_buf does not have driver. [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/util_ds_buf.vhd:243]
+WARNING: [Synth 8-7129] Port BUFG_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFH_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_FABRIC_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_ODIV2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_ODIV2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_GT_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_PS_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O1[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O3[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O4[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O1[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O3[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O4[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_IO[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUF_DS_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUF_IN[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_T[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_CE[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_CLR[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFH_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_CE[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_FABRIC_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_RXRECCLKSEL[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_RXRECCLKSEL[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE3_ADV[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE3_ADV[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE4_ADV[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE4_ADV[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_IB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_IB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_RXRECCLKSEL[1] in module util_ds_buf is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2551.195 ; gain = 454.676 ; free physical = 6852 ; free virtual = 18482
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3551.152; parent = 2551.199; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2569.008 ; gain = 472.488 ; free physical = 6851 ; free virtual = 18481
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3568.965; parent = 2569.012; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2569.008 ; gain = 472.488 ; free physical = 6850 ; free virtual = 18480
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3568.965; parent = 2569.012; children = 999.953
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2574.945 ; gain = 0.000 ; free physical = 6842 ; free virtual = 18472
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: U0/<const0>.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.runs/design_1_util_ds_buf_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.runs/design_1_util_ds_buf_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2641.945 ; gain = 0.000 ; free physical = 6664 ; free virtual = 18294
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2641.945 ; gain = 0.000 ; free physical = 6664 ; free virtual = 18294
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 6589 ; free virtual = 18219
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 6616 ; free virtual = 18245
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.runs/design_1_util_ds_buf_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 6658 ; free virtual = 18288
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 163.605
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 7015 ; free virtual = 18646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 175.043
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 7012 ; free virtual = 18646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1784.558; parent = 1620.952; children = 175.043
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8377 ; free virtual = 20007
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1918.735; parent = 1727.829; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8377 ; free virtual = 20007
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1918.956; parent = 1728.050; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8373 ; free virtual = 20003
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1919.733; parent = 1728.839; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1919.897; parent = 1729.003; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1919.913; parent = 1729.019; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1919.929; parent = 1729.034; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1920.007; parent = 1729.112; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1920.007; parent = 1729.112; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1920.022; parent = 1729.128; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |IBUFDS |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8368 ; free virtual = 19998
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1920.054; parent = 1729.159; children = 190.906
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3609.887; parent = 2609.934; children = 999.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 122 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2641.945 ; gain = 472.488 ; free physical = 8422 ; free virtual = 20052
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2641.945 ; gain = 545.426 ; free physical = 8422 ; free virtual = 20052
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2641.945 ; gain = 0.000 ; free physical = 8419 ; free virtual = 20049
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: U0/<const0>.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2641.945 ; gain = 0.000 ; free physical = 8470 ; free virtual = 20100
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5858736a
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2641.945 ; gain = 875.020 ; free physical = 8675 ; free virtual = 20305
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.runs/design_1_util_ds_buf_1_0_synth_1/design_1_util_ds_buf_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_util_ds_buf_1_0, cache-ID = b4a4429b2ef9be1e
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/fpgaProject/MyIR7020/Vivado2022.2/HispeedADC4CH/HispeedADC4CH.runs/design_1_util_ds_buf_1_0_synth_1/design_1_util_ds_buf_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_util_ds_buf_1_0_utilization_synth.rpt -pb design_1_util_ds_buf_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 14:43:18 2024...
